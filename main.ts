@@ -1,6 +1,9 @@
 input.onButtonPressed(Button.A, function () {
     Mode += 1
 })
+input.onButtonPressed(Button.B, function () {
+    basic.showString("Light" + input.lightLevel() + "Temperature" + input.temperature())
+})
 let Mode = 0
 let myImage = images.createImage(`
     # # # # #
